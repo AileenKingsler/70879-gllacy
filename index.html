@@ -26,19 +26,19 @@
 			</ul>
 			<ul class="user-navigation">
 				<li class="search-link">
-					<a href="#">Поиск</a>
-					<section class="search-popup">
+					<a href="search.html">Поиск</a>
+					<div class="search-popup">
 						<h2 class="visually-hidden">Форма поиска по сайту</h2>
 						<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
 							<label class="visually-hidden" for="search-field">Что ищем?</label>
 							<input type="search" id="search-field" placeholder="Что ищем?">
 							<button class="visually-hidden" type="submit">Искать</button>
 						</form>
-					</section>
+					</div>
 				</li>
 				<li class="login-link">
-					<a href="#">Вход</a>
-					<section class="login-popup">
+					<a href="login.html">Вход</a>
+					<div class="login-popup">
 						<h2 class="visually-hidden">Форма входа на сайт</h2>
 						<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 							<p>
@@ -51,14 +51,14 @@
 							</p>
 							<button class="button" type="submit">Войти</button>
 							<p class="login-links">
-								<a class="restore" href="#">Забыли пароль?</a>
-								<a class="register" href="#">Новая регистрация</a>
+								<a href="#">Забыли пароль?</a>
+								<a href="#">Новая регистрация</a>
 							</p>
 						</form>
-					</section>
+					</div>
 				</li>
 				<li class="cart-link empty">
-					<a href="#">Пусто</a>
+					<a href="cart.html">Пусто</a>
 				</li>
 			</ul>
 			<div class="header-contacts">
@@ -113,56 +113,48 @@
 			<h2 class="visually-hidden">Хиты продаж</h2>
 			<ul class="catalog-list">
 				<li class="catalog-item">
-					<p class="catalog-item-image">
-						<a href="#">
+					<a href="#">
+						<p class="catalog-item-image">
 							<img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-						</a>
-					</p>
-					<h3>
-						<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-					</h3>
+						</p>
+						<h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+					</a>
 					<p class="catalog-item-price">
 						<b>310 ₽</b>
 						<span>/кг</span>
 					</p>
 				</li>
 				<li class="catalog-item">
-					<p class="catalog-item-image">
-						<a href="#">
+					<a href="#">
+						<p class="catalog-item-image">
 							<img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-						</a>
-					</p>
-					<h3>
-						<a href="#">Сливочно-кофейное с кусочками шоколада</a>
-					</h3>
+						</p>
+						<h3>Сливочно-кофейное с кусочками шоколада</h3>
+					</a>
 					<p class="catalog-item-price">
 						<b>380 ₽</b>
 						<span>/кг</span>
 					</p>
 				</li>
 				<li class="catalog-item">
-					<p class="catalog-item-image">
-						<a href="#">
+					<a href="#">
+						<p class="catalog-item-image">
 							<img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-						</a>
-					</p>
-					<h3>
-						<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-					</h3>
+						</p>
+						<h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+					</a>
 					<p class="catalog-item-price">
 						<b>355 ₽</b>
 						<span>/кг</span>
 					</p>
 				</li>
 				<li class="catalog-item">
-					<p class="catalog-item-image">
-						<a href="#">
+					<a href="#">
+						<p class="catalog-item-image">
 							<img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-						</a>
-					</p>
-					<h3>
-						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-					</h3>
+						</p>
+						<h3>Сливочное крем-брюле с карамельной подливкой</h3>
+					</a>
 					<p class="catalog-item-price">
 						<b>415 ₽</b>
 						<span>/кг</span>
@@ -202,7 +194,7 @@
 				<p>Для заказов по телефону:</p>
 				<p><b>8 812 450-25-25</b></p>
 				<p>(с 10 до 20 ежедневно)</p>
-				<a href="#" class="feedback-link">Форма обратной связи</a>
+				<a href="feedback.html" class="feedback-link">Форма обратной связи</a>
 			</div>
 		</section>
 	</main>
@@ -236,11 +228,11 @@
 			</p>
 			<p>
 				<label class="visually-hidden" for="your-email">Ваша почта для ответа?</label>
-				<input id="your-email" type="text" name="your-email" placeholder="Ваша почта для ответа?">
+				<input id="your-email" type="email" name="your-email" placeholder="Ваша почта для ответа?">
 			</p>
 			<p>
 				<label class="visually-hidden" for="your-message">Напишите что-нибудь...</label>
-				<textarea id="your-message" name="your-message" rows="8" cols="40">Напишите что-нибудь...</textarea>
+				<textarea id="your-message" name="your-message" placeholder="Напишите что-нибудь..."></textarea>
 			</p>
 			<button class="button" type="submit">Отправить</button>
 		</form>

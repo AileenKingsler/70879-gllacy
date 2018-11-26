@@ -26,19 +26,19 @@
 			</ul>
 			<ul class="user-navigation">
 				<li class="search-link">
-					<a href="#">Поиск</a>
-					<section class="search-popup">
+					<a href="search.html">Поиск</a>
+					<div class="search-popup">
 						<h2 class="visually-hidden">Форма поиска по сайту</h2>
 						<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
 							<label class="visually-hidden" for="search-field">Что ищем?</label>
 							<input type="search" id="search-field" placeholder="Что ищем?">
 							<button class="visually-hidden" type="submit">Искать</button>
 						</form>
-					</section>
+					</div>
 				</li>
 				<li class="login-link">
-					<a href="#">Вход</a>
-					<section class="login-popup">
+					<a href="login.html">Вход</a>
+					<div class="login-popup">
 						<h2 class="visually-hidden">Форма входа на сайт</h2>
 						<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 							<p>
@@ -51,36 +51,38 @@
 							</p>
 							<button class="button" type="submit">Войти</button>
 							<p class="login-links">
-								<a class="restore" href="#">Забыли пароль?</a>
-								<a class="register" href="#">Новая регистрация</a>
+								<a href="#">Забыли пароль?</a>
+								<a href="#">Новая регистрация</a>
 							</p>
 						</form>
-					</section>
+					</div>
 				</li>
 				<li class="cart-link not-empty">
-					<a href="#">2 товара</a>
-					<section class="cart-popup">
+					<a href="cart.html">2 товара</a>
+					<div class="cart-popup">
 						<h2 class="visually-hidden">Товары в корзине</h2>
-						<div class="cart-popup-row">
-							<button class="cart-popup-delete" type="button">Удалить товар</button>
-							<img class="cart-popup-image" src="img/product-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-							<span class="cart-popup-title">Пломбир с апельсиновым джемом</span>
-							<span class="cart-popup-quantity">1,5 кг х <span class="cart-popup-price">200 руб.</span></span>
-							<span class="cart-popup-total-price">300 руб.</span>
-						</div>
-						<div class="cart-popup-row">
-							<button class="cart-popup-delete" type="button">Удалить товар</button>
-							<img class="cart-popup-image" src="img/product-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-							<span class="cart-popup-title">Клубничный пломбир с присыпкой из белого шоколада</span>
-							<span class="cart-popup-quantity">1,5 кг х <span class="cart-popup-price">300 руб.</span></span>
-							<span class="cart-popup-total-price">450 руб.</span>
-						</div>
+						<table>
+							<tr>
+								<td><button class="cart-popup-delete" type="button">Удалить товар</button></td>
+								<td><img class="cart-popup-image" src="img/product-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+								<td>Пломбир с апельсиновым джемом</td>
+								<td>1,5 кг х <span class="cart-popup-price">200 руб.</span></td>
+								<td>300 руб.</td>
+							</tr>
+							<tr>
+								<td><button class="cart-popup-delete" type="button">Удалить товар</button></td>
+								<td><img class="cart-popup-image" src="img/product-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+								<td>Клубничный пломбир с присыпкой из белого шоколада</td>
+								<td>1,5 кг х <span class="cart-popup-price">300 руб.</span></td>
+								<td>450 руб.</td>
+							</tr>
+						</table>
 						<div class="cart-popup-total">
 							<span class="cart-popup-total-text">Итого:</span>
 							<span class="cart-popup-total-price">750 руб.</span>
 						</div>
 						<a href="#" class="place-order">Оформить заказ</a>
-					</section>
+					</div>
 				</li>
 			</ul>
 			<div class="header-contacts">
@@ -279,25 +281,5 @@
 			<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-title-link" target="_blank">HTML Academy</a> &copy; 2017</p>
 		</div>
 	</footer>
-	<section class="modal modal-feedback">
-		<h2 class="visually-hidden">Форма обратной связи</h2>
-		<p class="feedback-title">Мы обязательно вам ответим!</p>
-		<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-			<p>
-				<label class="visually-hidden" for="your-name">Как вас зовут?</label>
-				<input id="your-name" type="text" name="your-name" placeholder="Как вас зовут?">
-			</p>
-			<p>
-				<label class="visually-hidden" for="your-email">Ваша почта для ответа?</label>
-				<input id="your-email" type="text" name="your-email" placeholder="Ваша почта для ответа?">
-			</p>
-			<p>
-				<label class="visually-hidden" for="your-message">Напишите что-нибудь...</label>
-				<textarea id="your-message" name="your-message" rows="8" cols="40">Напишите что-нибудь...</textarea>
-			</p>
-			<button class="button" type="submit">Отправить</button>
-		</form>
-		<button type="button" class="modal-close">Закрыть</button>
-	</section>
 </body>
 </html>
