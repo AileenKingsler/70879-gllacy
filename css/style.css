@@ -140,6 +140,8 @@ body{
 
 .slider-list{
   list-style: none;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 .slider-item{
@@ -174,12 +176,24 @@ body{
 }
 .slider-navigation{
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+.promo{
+  margin-bottom: 40px;
+}
 .promo-list{
+  display: flex;
+  justify-content: space-between;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .promo-item{
+  width: 560px;
+  border-radius: 15px;
+  padding: 20px;
   text-align: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -205,7 +219,7 @@ body{
 }
 
 .features{
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 25px 20px 20px;
   margin-bottom: 40px;
   color: #323232;
@@ -237,12 +251,13 @@ body{
 }
 .new-article{
   width: 560px;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 20px;
   background-color: #fff;
   background-image: url(../img/article-bg.jpg);
   background-repeat: no-repeat;
   background-position: bottom 0 right 0;
+  background-size: cover;
   color: #323232;
 }
 .new-article h2{
@@ -261,7 +276,7 @@ body{
 
 .mailing{
   width: 560px;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 30px 20px 35px;
   background-color: #f8f7f4;
   color: #5a5a5a;
@@ -281,7 +296,15 @@ body{
   box-shadow: inset 0 0 0 2px rgba(46, 136, 228, 0.52);
 }
 
+.contacts{
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .contact-info{
+  width: 302px;
+  border-radius: 15px;
+  padding: 30px 25px;
   background-color: #fff;
   color: #323232;
 }
@@ -300,9 +323,10 @@ body{
 }
 
 .breadcrumbs{
+  display: flex;
   list-style: none;
   padding: 0;
-  margin: 0 0 5px;
+  margin: 0 0 10px;
   font-size: 14px;
   line-height: 16px;
 }
@@ -324,11 +348,23 @@ body{
 .filters{
   margin-bottom: 40px;
 }
+.filter-form{
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
 .filter-form fieldset{
   border: none;
+  margin: 0;
+  margin-right: 14px;
+  margin-bottom: 15px;
+  padding: 0;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+}
+.filter-form fieldset:last-of-type{
+  margin-bottom: 0;
 }
 .filter-form legend{
   font-size: 14px;
@@ -347,6 +383,9 @@ body{
   border: none;
 }
 .filter-form ul{
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .filter-submit{
@@ -384,6 +423,9 @@ body{
 .catalog-item:nth-child(4n){
   margin-right: 0;
 }
+.hits .catalog-item{
+  margin-bottom: 0;
+}
 .catalog-item a{
   color: #fff;
 }
@@ -393,6 +435,7 @@ body{
   font-weight: 500;
 }
 .catalog-item-price{
+  margin: 0;
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
@@ -403,7 +446,12 @@ body{
 }
 
 .pagination-list{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   list-style: none;
+  margin: 0 0 30px;
+  padding: 0;
   line-height: 18px;
   font-weight: 500;
   text-align: right;
