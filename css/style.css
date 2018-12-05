@@ -496,6 +496,7 @@ body{
   justify-content: space-between;
 }
 .footer-social{
+  width: 190px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -503,7 +504,7 @@ body{
   margin: 0;
 }
 .footer-social li{
-  margin-right: 10px;
+  margin-right: 11px;
 }
 .footer-social li:last-child{
   margin-right: 0;
@@ -516,12 +517,8 @@ body{
   border-radius: 50%;
 }
 .footer-menu{
-  width: 330px;
-  height: 36px;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  flex-wrap: wrap;
+  width: 340px;
+  column-count: 2;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -539,12 +536,13 @@ body{
   color: #ffbc9e;
 }
 .footer-copyright{
+  width: 190px;
   font-size: 12px;
   line-height: 18px;
   color: #fefefe;
 }
 .footer-copyright p{
-  margin-bottom: 0;
+  margin: 0;
 }
 .academy-title-link{
   color: #fefefe;
