@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="inner-page">
   <header class="main-header">
     <nav class="main-navigation">
       <a href="index.html" class="site-logo">
@@ -125,53 +125,57 @@
           </fieldset>
           <fieldset>
             <legend>Цена: 100 руб. – 500 руб.</legend>
-            <div class="range"></div>
-            <button type="button" class="range-control">Цена, от</button>
-            <button type="button" class="range-control">Цена, до</button>
+            <div class="range-wrapper">
+              <div class="range">
+                <div class="range-bar"></div>
+                <button type="button" class="range-control range-control-from"><span class="visually-hidden">Цена, от</span></button>
+                <button type="button" class="range-control range-control-to"><span class="visually-hidden">Цена, до</span></button>
+              </div>
+            </div>
           </fieldset>
           <fieldset>
             <legend>Жирность:</legend>
-            <ul>
+            <ul class="fat-list">
               <li>
-                <input type="radio" name="fat-content" value="0" id="fat-content-1">
-                <label for="fat-content-1">0%</label>
+                <input type="radio" class="radio visually-hidden" name="fat-content" value="0" id="fat-content-1">
+                <label for="fat-content-1" class="radio-label">0%</label>
               </li>
               <li>
-                <input type="radio" name="fat-content" value="less-than-10" id="fat-content-2" checked>
-                <label for="fat-content-2">до 10%</label>
+                <input type="radio" class="radio visually-hidden" name="fat-content" value="less-than-10" id="fat-content-2" checked>
+                <label for="fat-content-2" class="radio-label">до 10%</label>
               </li>
               <li>
-                <input type="radio" name="fat-content" value="less-than-30" id="fat-content-3">
-                <label for="fat-content-3">до 30%</label>
+                <input type="radio" class="radio visually-hidden" name="fat-content" value="less-than-30" id="fat-content-3">
+                <label for="fat-content-3" class="radio-label">до 30%</label>
               </li>
               <li>
-                <input type="radio" name="fat-content" value="more-than-30" id="fat-content-4">
-                <label for="fat-content-4">выше 30%</label>
+                <input type="radio" class="radio visually-hidden" name="fat-content" value="more-than-30" id="fat-content-4" disabled>
+                <label for="fat-content-4" class="radio-label">выше 30%</label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Наполнители:</legend>
-            <ul>
+            <ul class="stuffing-list">
               <li>
-                <input type="checkbox" name="stuffing-chocolate" id="stuffing-chocolate" checked>
-                <label for="stuffing-chocolate">шоколадные</label>
+                <input type="checkbox" class="checkbox visually-hidden" name="stuffing-chocolate" id="stuffing-chocolate" checked>
+                <label for="stuffing-chocolate" class="checkbox-label">шоколадные</label>
               </li>
               <li>
-                <input type="checkbox" name="stuffing-powder" id="stuffing-powder" checked>
-                <label for="stuffing-powder">сахарные присыпки</label>
+                <input type="checkbox" class="checkbox visually-hidden" name="stuffing-powder" id="stuffing-powder" checked>
+                <label for="stuffing-powder" class="checkbox-label">сахарные присыпки</label>
               </li>
               <li>
-                <input type="checkbox" name="stuffing-fruit" id="stuffing-fruit">
-                <label for="stuffing-fruit">фрукты</label>
+                <input type="checkbox" class="checkbox visually-hidden" name="stuffing-fruit" id="stuffing-fruit">
+                <label for="stuffing-fruit" class="checkbox-label">фрукты</label>
               </li>
               <li>
-                <input type="checkbox" name="stuffing-syrup" id="stuffing-syrup">
-                <label for="stuffing-syrup">сиропы</label>
+                <input type="checkbox" class="checkbox visually-hidden" name="stuffing-syrup" id="stuffing-syrup">
+                <label for="stuffing-syrup" class="checkbox-label">сиропы</label>
               </li>
               <li>
-                <input type="checkbox" name="stuffing-jam" id="stuffing-jam">
-                <label for="stuffing-jam">джемы</label>
+                <input type="checkbox" class="checkbox visually-hidden" name="stuffing-jam" id="stuffing-jam" disabled>
+                <label for="stuffing-jam" class="checkbox-label">джемы</label>
               </li>
             </ul>
           </fieldset>
@@ -328,13 +332,13 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item-prev disabled"><a href="#">Предыдущая страница</a></li>
+          <li class="pagination-item-prev disabled"><a href="#"><span class="visually-hidden">Предыдущая страница</span></a></li>
           <li class="pagination-item-active"><a>1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
           <li><a href="#">4</a></li>
           <li><a href="#">5</a></li>
-          <li class="pagination-item-next"><a href="#">Следующая страница</a></li>
+          <li class="pagination-item-next"><a href="#"><span class="visually-hidden">Следующая страница</span></a></li>
         </ul>
       </section>
     </div>
