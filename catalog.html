@@ -39,7 +39,7 @@
             <h2 class="visually-hidden">Форма поиска по сайту</h2>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="search-field">Что ищем?</label>
-              <input type="search" id="search-field" class="site-navigation-field" placeholder="Что ищем?">
+              <input type="search" id="search-field" class="site-navigation-field" placeholder="Что ищем?" required>
               <button class="visually-hidden" type="submit">Искать</button>
             </form>
           </div>
@@ -56,11 +56,11 @@
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
               <p>
                 <label class="visually-hidden" for="user-email">Электронная почта</label>
-                <input id="user-email" type="email" class="site-navigation-field" name="email" placeholder="Электронная почта">
+                <input id="user-email" type="email" class="site-navigation-field" name="email" placeholder="Электронная почта" required>
               </p>
               <p>
                 <label class="visually-hidden" for="user-password">Пароль</label>
-                <input id="user-password" type="password" class="site-navigation-field" name="password" placeholder="Пароль">
+                <input id="user-password" type="password" class="site-navigation-field" name="password" placeholder="Пароль" required>
               </p>
               <button class="button" type="submit">Войти</button>
               <p class="login-links">
@@ -149,7 +149,7 @@
                 <label for="fat-content-3" class="radio-label">до 30%</label>
               </li>
               <li>
-                <input type="radio" class="radio visually-hidden" name="fat-content" value="more-than-30" id="fat-content-4" disabled>
+                <input type="radio" class="radio visually-hidden" name="fat-content" value="more-than-30" id="fat-content-4">
                 <label for="fat-content-4" class="radio-label">выше 30%</label>
               </li>
             </ul>
@@ -174,7 +174,7 @@
                 <label for="stuffing-syrup" class="checkbox-label">сиропы</label>
               </li>
               <li>
-                <input type="checkbox" class="checkbox visually-hidden" name="stuffing-jam" id="stuffing-jam" disabled>
+                <input type="checkbox" class="checkbox visually-hidden" name="stuffing-jam" id="stuffing-jam">
                 <label for="stuffing-jam" class="checkbox-label">джемы</label>
               </li>
             </ul>
@@ -332,13 +332,33 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item-prev disabled"><a href="#"><span class="visually-hidden">Предыдущая страница</span></a></li>
-          <li class="pagination-item-active"><a>1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li class="pagination-item-next"><a href="#"><span class="visually-hidden">Следующая страница</span></a></li>
+          <li class="pagination-item prev disabled">
+            <a href="#">
+              <span class="visually-hidden">Предыдущая страница</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#fff" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg>
+            </a>
+          </li>
+          <li class="pagination-item active">
+            <a>1</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">5</a>
+          </li>
+          <li class="pagination-item next">
+            <a href="#">
+              <span class="visually-hidden">Следующая страница</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#fff" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg>
+            </a>
+          </li>
         </ul>
       </section>
     </div>
@@ -374,8 +394,8 @@
       </ul>
       <ul class="footer-menu">
         <li><a href="#">Для поставщиков</a></li>
-        <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
+        <li><a href="#">О производстве</a></li>
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
       <div class="footer-copyright">

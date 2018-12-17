@@ -46,7 +46,7 @@
               <h2 class="visually-hidden">Форма поиска по сайту</h2>
               <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="search-field">Что ищем?</label>
-                <input type="search" class="site-navigation-field" id="search-field" placeholder="Что ищем?">
+                <input type="search" class="site-navigation-field" id="search-field" placeholder="Что ищем?" required>
                 <button class="visually-hidden" type="submit">Искать</button>
               </form>
             </div>
@@ -63,11 +63,11 @@
               <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                 <p>
                   <label class="visually-hidden" for="user-email">Электронная почта</label>
-                  <input id="user-email" type="email" class="site-navigation-field" name="email" placeholder="Электронная почта">
+                  <input id="user-email" type="email" class="site-navigation-field" name="email" placeholder="Электронная почта" required>
                 </p>
                 <p>
                   <label class="visually-hidden" for="user-password">Пароль</label>
-                  <input id="user-password" type="password" class="site-navigation-field" name="password" placeholder="Пароль">
+                  <input id="user-password" type="password" class="site-navigation-field" name="password" placeholder="Пароль" required>
                 </p>
                 <button class="button" type="submit">Войти</button>
                 <p class="login-links">
@@ -95,13 +95,13 @@
           <h2 class="visually-hidden">Наборы мороженого</h2>
           <ul class="slider-navigation">
             <li>
-              <label for="slider-control-1"><span class="visually-hidden">Переход к первому слайду</span></label>
+              <label for="slider-control-1" tabindex="0"><span class="visually-hidden">Переход к первому слайду</span></label>
             </li>
             <li>
-              <label for="slider-control-2"><span class="visually-hidden">Переход ко второму слайду</span></label>
+              <label for="slider-control-2" tabindex="0"><span class="visually-hidden">Переход ко второму слайду</span></label>
             </li>
             <li>
-              <label for="slider-control-3"><span class="visually-hidden">Переход к третьему слайду</span></label>
+              <label for="slider-control-3" tabindex="0"><span class="visually-hidden">Переход к третьему слайду</span></label>
             </li>
           </ul>
           <ul class="slider-list">
@@ -213,7 +213,7 @@
               <p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="mailing-email">Электронная почта</label>
-                <input type="email" class="mailing-field" id="mailing-email" placeholder="Электронная почта">
+                <input type="email" class="mailing-field" id="mailing-email" placeholder="Электронная почта" required>
                 <button class="button" type="submit">Отправить</button>
               </form>
             </div>
@@ -266,8 +266,8 @@
         </ul>
         <ul class="footer-menu">
           <li><a href="#">Для поставщиков</a></li>
-          <li><a href="#">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
+          <li><a href="#">О производстве</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
         <div class="footer-copyright">
@@ -302,5 +302,8 @@
     <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
   </section>
 
+  <div class="overlay"></div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
