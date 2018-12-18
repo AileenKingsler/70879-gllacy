@@ -196,10 +196,10 @@ img{
 .site-navigation-item:hover .dropdown-menu{
   display: block;
 }
-.dropdown-menu li:first-child{
+.dropdown-menu-item:first-child{
   font-weight: bold;
 }
-.dropdown-menu li:first-child::after{
+.dropdown-menu-item:first-child::after{
   content: '';
   display: block;
   height: 1px;
@@ -216,20 +216,20 @@ img{
   -o-transition: 0.25s;
   transition: 0.25s;
 }
-.dropdown-menu li:first-child a{
+.dropdown-menu-item:first-child a{
   padding-top: 12px;
   padding-bottom: 10px;
 }
-.dropdown-menu li:last-child a{
+.dropdown-menu-item:last-child a{
   padding-bottom: 12px;
 }
-.dropdown-menu li:not(.active) a:hover{
+.dropdown-menu-item:not(.active) a:hover{
   background-color: #fbded7;
 }
-.dropdown-menu li:not(.active) a:focus{
+.dropdown-menu-item:not(.active) a:focus{
   background-color: #f6b5a5;
 }
-.dropdown-menu .active a{
+.dropdown-menu-item.active a{
   background-color: #d07058;
   color: #fff;
 }
@@ -252,15 +252,15 @@ img{
   font-size: 14px;
   line-height: 16px;
 }
-.user-navigation li{
+.user-navigation-item{
   position: relative;
   padding: 3px 0;
   margin-right: 11px;
 }
-.user-navigation li:last-child{
+.user-navigation-item:last-child{
   margin-right: 0;
 }
-.user-navigation li > a{
+.user-navigation-item > a{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,13 +280,13 @@ img{
   background-color: #f8f7f4;
   color: #323232;
 }
-.user-navigation li > a span{
+.login-link span{
   line-height: 16px;
 }
 .search-link > a{
   padding: 8px;
 }
-.user-navigation li > a path{
+.user-navigation-item path{
   -webkit-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
@@ -299,7 +299,7 @@ img{
   padding: 8px 15px 7px;
   line-height: 0;
 }
-.login-link > a svg{
+.login-link svg{
   margin-right: 8px;
   margin-top: -1px;
 }
@@ -340,7 +340,7 @@ img{
   -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
-.user-navigation li:hover .user-navigation-popup{
+.user-navigation-item:hover .user-navigation-popup{
   display: block;
 }
 .search-popup{
@@ -793,7 +793,6 @@ img{
   transition: 0.25s;
 }
 .article-link:hover,
-.article-link:active,
 .article-link:focus{
   color: #e84d37;
 }
