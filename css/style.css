@@ -542,7 +542,7 @@ img{
 
 .slider{
   position: relative;
-  margin-top: -35px;
+  margin-top: -55px;
 }
 .slider-list{
   list-style: none;
@@ -554,32 +554,26 @@ img{
   display: none;
   position: relative;
   min-height: 584px;
-  overflow: hidden;
+  padding-bottom: 40px;
 }
 .slider-item img{
-  display: block;
-  margin: 0 auto;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .slider-item h3{
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  top: 310px;
+  position: relative;
+  padding-top: 330px;
   width: 700px;
   font-size: 60px;
   line-height: 60px;
   font-weight: bold;
-  margin: 0;
+  margin: 0 auto 30px;
 }
 .slider-item a{
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  top: 460px;
+  display: inline-block;
+  position: relative;
   padding: 10px 41px;
   border-radius: 32px;
   font-size: 32px;
@@ -622,7 +616,7 @@ img{
   position: absolute;
   z-index: 1;
   left: 0;
-  bottom: 82px;
+  bottom: 62px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -663,7 +657,6 @@ img{
 
 .promo{
   position: relative;
-  margin-top: -20px;
   margin-bottom: 40px;
 }
 .promo-list{
