@@ -24,6 +24,7 @@ img{
 }
 .button{
   display: inline-block;
+  vertical-align: top;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
@@ -574,6 +575,7 @@ img{
 }
 .slider-item a{
   display: inline-block;
+  vertical-align: top;
   position: relative;
   padding: 10px 41px;
   border-radius: 32px;
@@ -783,6 +785,7 @@ img{
 }
 .article-link{
   display: inline-block;
+  vertical-align: top;
   max-width: 290px;
   font-weight: bold;
   font-size: 24px;
@@ -876,17 +879,30 @@ img{
 }
 
 .contacts{
-  width: 1200px;
-  margin: 0 auto;
   position: relative;
   min-height: 430px;
+  overflow: hidden;
 }
 .contacts > img{
-  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.contacts iframe{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  border: none;
+  vertical-align: bottom;
 }
 .contact-info{
   position: absolute;
-  right: 27px;
+  z-index: 3;
+  right: calc((100% - 1146px)/2);
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
