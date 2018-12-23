@@ -86,20 +86,19 @@ img{
 
 .main-navigation{
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: flex-start;
   width: 1200px;
   margin: 0 auto;
   padding: 0 27px;
+  padding-top: 9px;
 }
-.site-background .main-navigation{
+.site-background .main-header{
   position: relative;
   z-index: 1;
 }
 .site-logo{
   width: 154px;
-  margin-right: 10px;
-  padding-top: 9px;
+  margin-right: 9px;
   line-height: 0;
 }
 .site-navigation{
@@ -108,9 +107,9 @@ img{
   width: 690px;
   list-style: none;
   padding: 0;
-  padding-top: 5px;
+  padding-top: 9px;
   margin: 0;
-  margin-right: 25px;
+  margin-right: auto;
   line-height: 18px;
   font-weight: bold;
 }
@@ -155,7 +154,7 @@ img{
   position: absolute;
   z-index: 1;
   top: 100%;
-  left: -7px;
+  left: -6px;
   padding: 0;
   margin: 0;
   background-color: #f8f7f4;
@@ -214,7 +213,7 @@ img{
   width: 267px;
   list-style: none;
   padding: 0;
-  padding-top: 5px;
+  padding-top: 11px;
   margin: 0;
   font-weight: 500;
   font-size: 14px;
@@ -223,10 +222,10 @@ img{
 .user-navigation-item{
   position: relative;
   padding: 3px 0;
-  margin-right: 11px;
+  margin-left: 11px;
 }
-.user-navigation-item:last-child{
-  margin-right: 0;
+.user-navigation-item:first-child{
+  margin-left: 0;
 }
 .user-navigation-item > a{
   display: flex;
@@ -459,12 +458,14 @@ img{
 }
 
 .header-contacts{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
   font-weight: bold;
   text-align: right;
-  margin-left: auto;
 }
 .header-contacts p{
-  margin: 0 0 3px;
+  margin: 0 0 4px;
   font-size: 14px;
   line-height: 16px;
 }
@@ -475,9 +476,12 @@ img{
   text-decoration: none;
 }
 
+.site-background .main-content{
+  margin-top: -56px;
+}
+
 .slider{
   position: relative;
-  margin-top: -55px;
 }
 .slider-list{
   list-style: none;
@@ -831,6 +835,9 @@ img{
   border-radius: 22px;
 }
 
+.inner-page .main-content{
+  margin-top: -20px;
+}
 .inner-page::before{
   content: '';
   position: absolute;
@@ -846,7 +853,7 @@ img{
   display: flex;
   list-style: none;
   padding: 0;
-  margin: -20px 0 5px;
+  margin: 0 0 5px;
   font-size: 14px;
   line-height: 16px;
 }
